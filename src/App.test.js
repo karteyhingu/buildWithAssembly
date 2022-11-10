@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import {render, screen} from '@testing-library/react';
+import Dashboard from "./views/components/Dashboard";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+test('render dashboard page ', () => {
+  render(<Dashboard/>);
+  const linkElement = screen.getByText(/GitHub Search Application/i);
   expect(linkElement).toBeInTheDocument();
 });
